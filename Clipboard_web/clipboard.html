@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipboard - Clipboard Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #2D1B4E 0%, #1e3a8a 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <nav class="absolute top-0 w-full z-10 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            
+            <div class="flex items-center gap-3">
+                <img src="Images/icon/clipboard128.png" alt="Clipboard Logo" class="w-10 h-10 rounded-lg shadow-lg">
+                <span class="text-white font-bold text-xl tracking-tight">Clipboard</span>
+            </div>
+
+            <div class="flex items-center gap-4 sm:gap-8">
+                
+                <a href="../index.html" class="text-blue-100 hover:text-white font-medium text-sm transition-colors">
+                    Other Extension
+                </a>
+
+                <div class="flex items-center gap-3">
+                    <span class="text-blue-200 text-xs uppercase tracking-wider font-semibold hidden sm:block">Developer</span>
+                    <a href="https://www.linkedin.com/in/mrigyank-roy" target="_blank" 
+                       class="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-sm px-4 py-2 rounded-full transition text-white text-sm font-medium">
+                        Mrigyank Roy <i class="fab fa-linkedin text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white pt-36 pb-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            
+            <div class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-900/30 border border-blue-400/30 backdrop-blur-sm animate-fade-in-up">
+                <p class="text-blue-100 font-medium text-sm md:text-base">
+                    With over <span class="text-white font-bold">1,500+ users</span>, Clipboard is the simplest tool for text.
+                </p>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                The simplest and most reliable <br class="hidden md:block" /> clipboard manager
+            </h1>
+            
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-10">
+                Store text snippets with custom titles for easy access and sync them across devices instantly.
+            </p>
+            
+            <div class="flex flex-wrap justify-center items-center gap-4 mb-8">
+                <a href="https://www.google.com" target="_blank" class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-5 rounded-lg shadow-lg transition transform hover:-translate-y-1 flex items-center gap-2 min-w-[180px] justify-center group decoration-0">
+                    <i class="fab fa-chrome text-xl text-[#4285F4] group-hover:scale-110 transition"></i>
+                    Add to Chrome
+                </a>
+
+                <a href="https://microsoftedge.microsoft.com/addons/detail/clipboard/iepgngkiknjnhgfncpbobhlimhkonphl" target="_blank" class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-5 rounded-lg shadow-lg transition transform hover:-translate-y-1 flex items-center gap-2 min-w-[180px] justify-center group decoration-0">
+                    <i class="fab fa-edge text-xl text-[#0078D7] group-hover:scale-110 transition"></i>
+                    Add to Edge
+                </a>
+
+                <!-- <a href="https://addons.mozilla.org" target="_blank" class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-5 rounded-lg shadow-lg transition transform hover:-translate-y-1 flex items-center gap-2 min-w-[180px] justify-center group decoration-0">
+                    <i class="fab fa-firefox-browser text-xl text-[#FF7139] group-hover:scale-110 transition"></i>
+                    Add to Firefox
+                </a> -->
+            </div>
+
+            <p class="text-blue-200 text-sm mb-10 opacity-90 font-medium">
+                <i class="fa-solid fa-star text-yellow-400 mr-1"></i> 
+                Rate the extension by visiting the stores above!
+            </p>
+
+            <div class="flex justify-center mb-16">
+                <a href="https://www.buymeacoffee.com/mrigyank_roy" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=mrigyank_roy&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" /></a>
+            </div>
+
+            <div class="relative mx-auto max-w-[1350px] px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    
+                    <div class="bg-white/5 p-2 rounded-2xl backdrop-blur-sm transform transition hover:scale-[1.01] duration-300">
+                        <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                            <img src="Images/Clipboard_description.png" alt="Extension Description" class="w-full h-auto">
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 p-2 rounded-2xl backdrop-blur-sm transform transition hover:scale-[1.01] duration-300">
+                        <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                            <img src="Images/clipboard_features.png" alt="Extension Features" class="w-full h-auto">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Save time and be more productive</h2>
+                <p class="mt-4 text-xl text-gray-500">Everything you need to manage your text snippets.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-blue-100 w-12 h-12 flex items-center justify-center rounded-lg text-blue-600 mb-4 text-xl">
+                        <i class="fa-solid fa-save"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Save Clipboard Items</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Store text snippets with custom titles for easy access whenever you need them.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-purple-100 w-12 h-12 flex items-center justify-center rounded-lg text-purple-600 mb-4 text-xl">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sync Clipboard Items</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Seamlessly sync your saved text snippets between multiple devices instantly.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-lg text-green-600 mb-4 text-xl">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Quick Copy</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Copy saved text with just one click on the title. Speed up your workflow.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-yellow-100 w-12 h-12 flex items-center justify-center rounded-lg text-yellow-600 mb-4 text-xl">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Edit Entries</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Update stored text and titles to stay organized as your needs change.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-red-100 w-12 h-12 flex items-center justify-center rounded-lg text-red-600 mb-4 text-xl">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Delete Entries</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Easily remove unwanted items from your saved list to keep it clean.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-lg text-indigo-600 mb-4 text-xl">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Always Ready</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Your saved snippets are always available whenever you open the extension.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="testimonials" class="bg-white border-t border-gray-200">
+        <section class="px-5 py-24 mx-auto leading-relaxed sm:px-6 lg:px-8 max-w-6xl">
+            <div class="mb-10 text-center">
+                <h3 class="text-3xl font-bold text-gray-900">Hear from some happy users</h3>
+                <p class="mt-4 text-center text-gray-500">
+                    Over 1,500+ users are saving hours of their time using Clipboard!
+                </p>
+            </div>
+    
+            <div class="px-0 space-y-6 md:px-10">
+    
+                <div class="relative pl-8">
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="absolute -ml-8 text-blue-200 w-7 h-7 -mt-1">
+                        <path d="M10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3z"></path>
+                    </svg>
+                    <div class="text-blue-600 mb-1">
+                        I love the fact that <mark class="bg-yellow-100 text-blue-900 px-0.5">it synchronizes between computers</mark> and that you can even use it as a notepad. I would give it 6 stars if I could. Thanks a lot for your work!
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <div class="text-gray-500 font-medium">Luis</div>
+                        <div class="flex ml-2 text-gray-900 text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="relative pl-8">
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="absolute -ml-8 text-blue-200 w-7 h-7 -mt-1">
+                        <path d="M10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3z"></path>
+                    </svg>
+                    <div class="text-blue-600 mb-1">
+                        Minimalistic and <mark class="bg-yellow-100 text-blue-900 px-0.5">keeps the actual value hidden</mark>. Exactly what I was looking for.
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <div class="text-gray-500 font-medium">Andrey</div>
+                        <div class="flex ml-2 text-gray-900 text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="relative pl-8">
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="absolute -ml-8 text-blue-200 w-7 h-7 -mt-1">
+                        <path d="M10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3z"></path>
+                    </svg>
+                    <div class="text-blue-600 mb-1">
+                        Love it. Use it multiple times per day. Does just what I need and <mark class="bg-yellow-100 text-blue-900 px-0.5">saves so many keystrokes</mark>!
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <div class="text-gray-500 font-medium">Sarah Jenkins</div>
+                        <div class="flex ml-2 text-gray-900 text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="relative pl-8">
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="absolute -ml-8 text-blue-200 w-7 h-7 -mt-1">
+                        <path d="M10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3z"></path>
+                    </svg>
+                    <div class="text-blue-600 mb-1">
+                        <mark class="bg-yellow-100 text-blue-900 px-0.5">Clean, fast, and reliable.</mark> It doesn't clutter my browser and the sync feature works flawlessly.
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <div class="text-gray-500 font-medium">Michael Chen</div>
+                        <div class="flex ml-2 text-gray-900 text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    </div>
+
+    <section class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12">Full control over your data</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6 shadow-blue-200 shadow-lg">
+                        <i class="fas fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Clean & Organized</h3>
+                    <p class="text-gray-600">Keep your clipboard clean and organized with easy editing and deletion.</p>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6 shadow-blue-200 shadow-lg">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">One Click Access</h3>
+                    <p class="text-gray-600">Use the extension to quickly retrieve copied items in just one click.</p>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-200 hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6 shadow-blue-200 shadow-lg">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Private & Secure</h3>
+                    <p class="text-gray-600">Nothing is saved on our servers. Your data stays locally on your device, ensuring complete privacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1e293b] text-slate-400 py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            
+            <div class="flex items-center justify-center gap-2 text-sm md:text-base">
+                <span>Made with <span class="text-red-500 animate-pulse">❤️</span> by</span>
+                
+                <a href="https://www.linkedin.com/in/mrigyank-roy" target="_blank" 
+                   class="font-medium text-white hover:text-blue-400 transition-colors underline decoration-blue-500/30 underline-offset-4">
+                    Mrigyank Roy
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
