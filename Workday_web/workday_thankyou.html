@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Installing Workday Filler</title>
+    <link rel="icon" type="image/png" href="Images/icon/workday16.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #2D1B4E 0%, #1e3a8a 100%);
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        
+        /* Highlighted Note Style */
+        .highlight-note {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #facc15; 
+            padding: 1rem 1.5rem;
+            border-radius: 0 12px 12px 0;
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <nav class="absolute top-0 w-full z-10 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="Images/icon/workday128.png" alt="Workday Filler Logo" class="w-10 h-10 rounded-lg shadow-lg">
+                <span class="text-white font-bold text-xl tracking-tight">Workday Filler</span>
+            </div>
+            <div class="flex items-center gap-4 sm:gap-8">
+                <a href="../index.html" class="text-blue-100 hover:text-white font-medium text-sm transition-colors">
+                    Home
+                </a>
+                <div class="flex items-center gap-3">
+                    <a href="https://www.linkedin.com/in/mrigyank-roy" target="_blank" 
+                       class="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-sm px-4 py-2 rounded-full transition text-white text-sm font-medium">
+                        Mrigyank Roy <i class="fab fa-linkedin text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white pt-40 pb-24 flex-grow relative overflow-hidden flex items-center">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-green-500 rounded-full mb-8 shadow-lg shadow-green-900/20 animate-fade-in-up">
+                <i class="fa-solid fa-check text-4xl text-white"></i>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 animate-fade-in-up delay-1">
+                Installation Successful!
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-blue-100 mb-10 animate-fade-in-up delay-2 max-w-2xl mx-auto">
+                Thank you for choosing <strong>Workday Filler</strong>. You're now ready to breeze through your job applications.
+            </p>
+
+            <div class="mb-12 animate-fade-in-up delay-2">
+                <div class="highlight-note shadow-2xl backdrop-blur-sm">
+                    <p class="text-yellow-400 font-bold text-xs uppercase tracking-widest mb-2 flex items-center">
+                        <i class="fa-solid fa-circle-exclamation mr-2"></i> Important Guidelines
+                    </p>
+                    <div class="space-y-2 text-white font-medium md:text-lg">
+                        <p class="flex items-center"><i class="fa-solid fa-caret-right mr-3 text-yellow-400"></i> Enter one skill per line</p>
+                        <p class="flex items-center"><i class="fa-solid fa-caret-right mr-3 text-yellow-400"></i> Keep skills spelling same as that on Workday page</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left animate-fade-in-up delay-2">
+                <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 transition hover:bg-white/10 hover:scale-[1.02] duration-300">
+                    <div class="text-blue-400 mb-4 text-2xl"><i class="fa-solid fa-thumbtack"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Pin for Easy Access</h3>
+                    <p class="text-blue-100/80 text-sm">Click the puzzle icon in Chrome and pin Workday Filler to your toolbar for instant access.</p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 transition hover:bg-white/10 hover:scale-[1.02] duration-300">
+                    <div class="text-purple-400 mb-4 text-2xl"><i class="fa-solid fa-keyboard"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Configure Your Skills</h3>
+                    <p class="text-blue-100/80 text-sm">Open the extension and paste your skill list. We'll remember it for all future applications.</p>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 transition hover:bg-white/10 hover:scale-[1.02] duration-300">
+                    <div class="text-green-400 mb-4 text-2xl"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Apply in Seconds</h3>
+                    <p class="text-blue-100/80 text-sm">On any Workday skills page, just click the field and hit START. Let the magic happen.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 flex flex-col items-center animate-fade-in-up delay-2">
+                <p class="text-blue-200 mb-6 font-medium text-lg">Enjoying the tool? Support us or leave a review!</p>
+                
+                <div class="flex flex-wrap justify-center items-center gap-6">
+                    <a href="https://www.buymeacoffee.com/mrigyank_roy" target="_blank" class="transition transform hover:scale-105">
+                        <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=mrigyank_roy&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" />
+                    </a>
+
+                    <a href="workday.html" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-3 px-8 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center gap-2 decoration-0 h-[50px]">
+                        <i class="fa-solid fa-star text-yellow-500 text-xl"></i>
+                        Rate Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="bg-[#1e293b] text-slate-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 text-sm">
+                <span>Made with <span class="text-red-500 animate-pulse">❤️</span> by</span>
+                <a href="https://www.linkedin.com/in/mrigyank-roy" target="_blank" 
+                   class="font-medium text-white hover:text-blue-400 transition-colors underline decoration-blue-500/30 underline-offset-4">
+                    Mrigyank Roy
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
