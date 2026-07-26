@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's New in Clipboard 3.0</title>
+    <meta name="description" content="Everything that changed in Clipboard 3.0 - clipboard history, keyboard shortcuts, right-click paste, search, backups and 12x more storage.">
+    <link rel="icon" type="image/png" href="Images/icon/clipboard16.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #2D1B4E 0%, #1e3a8a 100%);
+        }
+    </style>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <nav class="absolute top-0 w-full z-10 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+
+            <a href="clipboard.html" class="flex items-center gap-3">
+                <img src="Images/icon/clipboard128.png" alt="Clipboard Logo" class="w-10 h-10 rounded-lg shadow-lg">
+                <span class="text-white font-bold text-xl tracking-tight">Clipboard</span>
+            </a>
+
+            <div class="flex items-center gap-4 sm:gap-8">
+
+                <a href="clipboard.html" class="text-blue-100 hover:text-white font-medium text-sm transition-colors">
+                    Home
+                </a>
+
+                <a href="../index.html" class="text-blue-100 hover:text-white font-medium text-sm transition-colors hidden sm:block">
+                    Other Extension
+                </a>
+
+                <a href="https://www.linkedin.com/in/mrigyank-roy" target="_blank"
+                   class="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-sm px-4 py-2 rounded-full transition text-white text-sm font-medium">
+                    LinkedIn <i class="fab fa-linkedin text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white pt-36 pb-20 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+
+            <div class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-900/30 border border-blue-400/30 backdrop-blur-sm">
+                <p class="text-blue-100 font-medium text-sm md:text-base">
+                    <i class="fa-solid fa-arrow-up-right-dots mr-1"></i>
+                    Version <span class="text-white font-bold">3.0</span> &middot; the biggest update yet
+                </p>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                What's new in Clipboard
+            </h1>
+
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-8">
+                Clipboard history, keyboard shortcuts, right-click pasting, search,
+                backups and 12&times; more room for your snippets.
+            </p>
+
+            <div class="inline-flex items-center gap-2 bg-green-400/10 border border-green-300/30 text-green-100 px-4 py-2 rounded-full text-sm font-medium">
+                <i class="fa-solid fa-circle-check"></i>
+                Already installed &mdash; your snippets carried over automatically
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Everything that changed</h2>
+                <p class="mt-4 text-xl text-gray-500">Eight upgrades, all of them yours right now.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-indigo-100 w-12 h-12 flex items-center justify-center rounded-lg text-indigo-600 mb-4 text-xl">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">
+                        Clipboard history
+                        <span class="ml-2 align-middle text-[10px] uppercase tracking-wider font-bold bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full">New</span>
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Never lose something to the next copy again. Clipboard can remember
+                        the last 50 things you copied, ready to paste back with one click.
+                        It is <strong>off until you switch it on</strong>.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-blue-100 w-12 h-12 flex items-center justify-center rounded-lg text-blue-600 mb-4 text-xl">
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Keyboard shortcuts</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Press
+                        <kbd class="bg-gray-100 border border-gray-300 border-b-2 rounded px-1.5 py-0.5 text-sm font-mono">Alt</kbd>
+                        +
+                        <kbd class="bg-gray-100 border border-gray-300 border-b-2 rounded px-1.5 py-0.5 text-sm font-mono">Shift</kbd>
+                        +
+                        <kbd class="bg-gray-100 border border-gray-300 border-b-2 rounded px-1.5 py-0.5 text-sm font-mono">1</kbd>
+                        to drop your first snippet straight into whatever field you are typing
+                        in. Up to nine of them, and you can rebind every key.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-purple-100 w-12 h-12 flex items-center justify-center rounded-lg text-purple-600 mb-4 text-xl">
+                        <i class="fa-solid fa-arrow-pointer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Right-click to paste</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Right-click any text box and pick from <em>Paste clip</em> to insert a
+                        snippet without touching the keyboard. Select text anywhere and
+                        <em>Save selection to Clipboard</em> keeps it for later.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-green-100 w-12 h-12 flex items-center justify-center rounded-lg text-green-600 mb-4 text-xl">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Paste straight into the page</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Clicking a snippet can now type it directly into the field you were
+                        using, skipping the copy-then-paste dance. Choose copy or paste under
+                        Settings &rarr; Behavior.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-yellow-100 w-12 h-12 flex items-center justify-center rounded-lg text-yellow-600 mb-4 text-xl">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Search your snippets</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Filter by title or by what is inside a snippet as you type. Handy once
+                        your list gets long.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-red-100 w-12 h-12 flex items-center justify-center rounded-lg text-red-600 mb-4 text-xl">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Backup &amp; restore</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Export every snippet to a single file, and import it back on any
+                        machine &mdash; merging with what you already have, or replacing it.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-sky-100 w-12 h-12 flex items-center justify-center rounded-lg text-sky-600 mb-4 text-xl">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">12&times; more storage</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        The old version shared one small 8KB box for everything. Every snippet
+                        now gets its own space, lifting the ceiling to roughly 100KB and up to
+                        400 snippets &mdash; still synced across your devices.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-orange-100 w-12 h-12 flex items-center justify-center rounded-lg text-orange-600 mb-4 text-xl">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Rebuilt interface</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        A proper Settings screen, a full-height editor for long snippets, a
+                        storage meter, and confirmations that look like part of the extension
+                        instead of a browser alert.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                <div class="p-8 md:p-10">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl shadow-blue-200 shadow-lg shrink-0">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900">About clipboard history</h2>
+                            <p class="text-gray-500">Because it is the one feature that needs explaining.</p>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Recording what you copy means the extension has to watch the pages you
+                        copy from. That is a real trade, so it is yours to make &mdash; here is
+                        exactly how it works:
+                    </p>
+
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                            <span><strong>Off by default.</strong> Nothing is recorded until you turn it on in Settings, and your browser will ask permission first.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                            <span><strong>Stays on your device.</strong> History is never synced anywhere and never leaves your computer. Your saved snippets sync as before; history does not.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                            <span><strong>Passwords are skipped.</strong> Copies from password fields, one-time codes, card numbers and security codes are ignored outright.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                            <span><strong>Only the last 50.</strong> Older entries drop off automatically. You can clear the list at any time, or have it wipe itself whenever you close the browser.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                            <span><strong>Switching it off gives the permission back.</strong> Turn history off and the extension returns to having no access to your pages at all.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-50 border-t border-blue-100 px-8 py-5 md:px-10">
+                    <p class="text-blue-900 text-sm">
+                        <i class="fa-solid fa-circle-info mr-1"></i>
+                        Nothing you copy is ever sent to a server. There is no account, no
+                        tracking, and no data leaves your browser.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Your snippets are safe</h2>
+            <p class="text-gray-600 leading-relaxed mb-10">
+                Everything you had saved moved across to the new format on its own the moment
+                the extension updated &mdash; same snippets, same order, nothing to do. If
+                anything looks off, export a backup from Settings and reach out.
+            </p>
+
+            <div class="flex flex-wrap justify-center items-center gap-4 mb-10">
+                <a href="https://chromewebstore.google.com/detail/clipboard/aoijchikkppgkhpicnloaahhbajknkjk" target="_blank"
+                   class="bg-gray-900 hover:bg-black text-white font-bold py-3 px-6 rounded-lg shadow-lg transition transform hover:-translate-y-1 flex items-center gap-2">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    Rate this update
+                </a>
+
+                <a href="clipboard.html"
+                   class="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-6 rounded-lg border border-gray-300 shadow-sm transition transform hover:-translate-y-1 flex items-center gap-2">
+                    <i class="fa-solid fa-house"></i>
+                    Back to Clipboard
+                </a>
+            </div>
+
+            <div class="flex justify-center">
+                <a href="https://www.buymeacoffee.com/mrigyank_roy" target="_blank">
+                    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=mrigyank_roy&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1e293b] text-slate-400 py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+
+            <div class="flex items-center justify-center gap-2 text-sm md:text-base">
+                <span>Made with <span class="text-red-500 animate-pulse">❤️</span> by</span>
+
+                <a href="https://www.linkedin.com/in/mrigyank-roy" target="_blank"
+                   class="font-medium text-white hover:text-blue-400 transition-colors underline decoration-blue-500/30 underline-offset-4">
+                    Mrigyank Roy
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
